@@ -44,6 +44,18 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
-    <script src="docs/js/calculator.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const industrySelect = document.getElementById('industry');
+            const industries = ['制造业', '服务业', '零售业', '建筑业']; // 示例行业列表
+            industries.forEach(industry => {
+                const option = document.createElement('option');
+                option.value = industry;
+                option.textContent = industry;
+                industrySelect.appendChild(option);
+            });
+        });
+    </script>
 </body>
 </html>
