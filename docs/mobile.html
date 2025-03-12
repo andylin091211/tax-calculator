@@ -144,30 +144,6 @@
                 padding: 0.7rem;
             }
         }
-
-        /* 添加加载动画 */
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .loading::after {
-            content: '';
-            display: inline-block;
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 2px solid #3498db;
-            border-radius: 50%;
-            border-top-color: transparent;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
     </style>
 </head>
 <body>
@@ -200,7 +176,6 @@
                     <button type="submit">计算税负</button>
                 </form>
             </div>
-            <div class="loading" id="loading"></div>
             <div class="result-section">
                 <h2>计算结果</h2>
                 <div id="results"></div>
@@ -216,16 +191,6 @@
             // 自动聚焦到第一个输入框
             const firstInput = document.querySelector('input, select');
             if (firstInput) firstInput.focus();
-
-            // 处理表单提交时显示加载动画
-            const form = document.getElementById('taxForm');
-            const loading = document.getElementById('loading');
-            
-            if (form && loading) {
-                form.addEventListener('submit', function() {
-                    loading.style.display = 'block';
-                });
-            }
 
             // 输入框失去焦点时自动隐藏键盘
             const inputs = document.querySelectorAll('input');
