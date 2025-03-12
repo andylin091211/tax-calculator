@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>企业税负计算器</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        (function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase())) {
+                window.location.href = './mobile.html';
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
