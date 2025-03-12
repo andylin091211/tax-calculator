@@ -1,0 +1,46 @@
+{
+  "农副食品加工业": {
+    "vatRate": 3.50,
+    "incomeTaxRate": 1.00
+  },
+  "食品制造业": {
+    "vatRate": 4.50,
+    "incomeTaxRate": 1.00
+  },
+  "纺织服装、鞋帽制造业": {
+    "vatRate": 2.91,
+    "incomeTaxRate": 1.00
+  },
+  "医药制造业": {
+    "vatRate": 8.50,
+    "incomeTaxRate": 2.50
+  },
+  "电子通信设备制造业": {
+    "vatRate": 2.65,
+    "incomeTaxRate": 2.00
+  },
+  "造纸及纸制品业": {
+    "vatRate": 5.00,
+    "incomeTaxRate": 1.00
+  },
+  "塑料制品业": {
+    "vatRate": 3.50,
+    "incomeTaxRate": 3.00
+  },
+  "非金属矿物制品业": {
+    "vatRate": 5.50,
+    "incomeTaxRate": 1.00
+  },
+  "金属制品业": {
+    "vatRate": 2.20,
+    "incomeTaxRate": 2.00
+  },
+  "电气机械及器材": {
+    "vatRate": 3.70,
+    "incomeTaxRate": 2.00
+  },
+  "电力、热力的生产和供应业": {
+    "vatRate": 4.95,
+    "incomeTaxRate": 1.50
+  }
+}

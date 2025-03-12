@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业税负计算器</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>企业税负计算器</h1>
+        <div class="calculator">
+            <div class="input-section">
+                <h2>基础信息录入</h2>
+                <form id="taxForm">
+                    <div class="form-group">
+                        <label>行业类型：</label>
+                        <select id="industry" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>销售收入：</label>
+                        <input type="number" id="revenue" required>
+                    </div>
+                    <div class="form-group">
+                        <label>销售毛利：</label>
+                        <input type="number" id="grossProfit" required>
+                    </div>
+                    <div class="form-group">
+                        <label>实际缴纳增值税：</label>
+                        <input type="number" id="actualVAT" required>
+                    </div>
+                    <div class="form-group">
+                        <label>实际缴纳所得税：</label>
+                        <input type="number" id="actualIncomeTax" required>
+                    </div>
+                    <button type="submit">计算</button>
+                </form>
+            </div>
+            <div class="result-section">
+                <h2>计算结果</h2>
+                <div id="results"></div>
+                <div id="chart"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="docs/js/calculator.js"></script>
+</body>
+</html>
